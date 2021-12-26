@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div class="wrapper__form">
+        <p>Entre com seu nome e idade!</p>
+
+        <form class="form" action="" method="get">
+          <label for="name">
+            <input id="name" type="text" placeholder="Nome" maxlength="15"/>
+          </label>
+
+          <label for="age">
+            <input id="age" type="number" placeholder="Idade" />
+          </label>
+
+          <div class="wrapper__button">
+            <button type="submit" onclick="user.save()">Salvar</button>
+            <button type="reset">Limpar</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="wrapper__table">
+        <table class="table">
+          <thead>
+            <tr class="line__title">
+              <th scope="col">Nome</th>
+              <th scope="col">Idade</th>
+            </tr>
+          </thead>
+
+          <tbody id="tbody">
+            <tr></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
